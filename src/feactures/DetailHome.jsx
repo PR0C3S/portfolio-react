@@ -14,6 +14,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import DownloadIcon from "@mui/icons-material/Download";
 import { Link, useNavigate } from "react-router-dom";
 import Slider from "./Slider";
+import MySkills from "./MySkills";
 
 export default function DetailHome() {
   const name = "John Harold Peña Acosta";
@@ -82,6 +83,9 @@ export default function DetailHome() {
             </IconButton>
           </Tooltip>
         </Grid>
+      </Grid>
+      <Grid item xs={12}>
+        <MySkills />
       </Grid>
       <Grid item xs={12}>
         <Slider />
