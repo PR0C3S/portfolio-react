@@ -11,7 +11,7 @@ import spring from "../assets/spring.svg";
 import html5 from "../assets/html5.svg";
 import css from "../assets/css.svg";
 import materialui from "../assets/Material UI.svg";
-import bootstrap from "../assets/bootstrap.svg";
+import bootstrap from "../assets/Bootstrap.svg";
 import linux from "../assets/linux.svg";
 import android from "../assets/android-icon.svg";
 import git from "../assets/git.svg";
