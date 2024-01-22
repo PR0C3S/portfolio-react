@@ -12,83 +12,112 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import DownloadIcon from "@mui/icons-material/Download";
-import { Link, useNavigate } from "react-router-dom";
-import Slider from "./Slider";
-import MySkills from "./MySkills";
+import { Typewriter } from "react-simple-typewriter";
+import resume from "../pdf/Resume_CV_John Pena.pdf";
+import { description, mail, name, positions } from "../utils/Constants";
 
 export default function DetailHome() {
-  const name = "John Harold Peña Acosta";
-  const position = "Full stack developer";
-  const description =
-    "A passionate fullstack developer from Dominican Republic 🇩🇴, I am a technology lover who is constantly looking for information, I really like sports and spending time with my friends.";
-
   return (
-    <Grid container justifyContent={"center"} mt={3}>
-      <Avatar
-        alt="Remy Sharp"
-        src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-cartoon-color-simple-male-avatar-png-image_5230557.jpg"
-        sx={{ width: 350, height: 350 }}
-      />
+    <Grid container mt={10} direction="row-reverse" justifyContent={"center"}>
       <Grid
         item
         container
-        xs={8}
-        justifyContent={"flex-start"}
-        alignItems={"center"}
+        xs={12}
+        md={4}
+        rowSpacing={1}
+        justifyContent={"center"}
+      >
+        <Grid item>
+          <Avatar
+            alt="John pena"
+            src="/yo.png"
+            sx={{ width: 300, height: 300 }}
+          />
+        </Grid>
+      </Grid>
+      <Grid
+        item
+        container
+        xs={12}
+        md={8}
+        mt={1}
+        rowSpacing={1}
+        justifyContent={"center"}
       >
         <Grid item xs={12}>
-          <Typography variant="h4" textAlign={"center"}>
+          <Typography variant="h5" fontWeight={"bold"} textAlign={"center"}>
             Hi, I'm
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h3" color={"primary"} textAlign={"center"}>
+          <Typography
+            variant="h4"
+            fontWeight={"bold"}
+            component={"div"}
+            textAlign={"center"}
+            color={"primary"}
+          >
             {name}
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4" textAlign={"center"}>
-            {position}
+          <Typography variant="h5" fontWeight={"bold"} textAlign={"center"}>
+            <Typewriter words={positions} loop={0} cursor={true} />
           </Typography>
         </Grid>
-        <Grid item xs={12}>
-          <Typography variant="body1" textAlign={"center"}>
+        <Grid item xs={10}>
+          <Typography textAlign={"center"} color="text.secondary">
             {description}
           </Typography>
         </Grid>
-        <Grid item container xs={12} justifyContent={"center"} spacing={1}>
+        <Grid
+          item
+          container
+          xs={12}
+          justifyContent={"center"}
+          alignItems={"center"}
+          spacing={1}
+        >
           <Grid item>
-            <Button variant="outlined" startIcon={<DownloadIcon />}>
+            <Button
+              variant="outlined"
+              startIcon={<DownloadIcon />}
+              download={"Resume_CV_John Pena"}
+              href={resume}
+            >
               Download Resume
             </Button>
           </Grid>
           <Grid item>
-            <Button variant="outlined" startIcon={<EmailIcon />}>
-              Contact
+            <Button
+              variant="outlined"
+              startIcon={<EmailIcon />}
+              href={`mailto:${mail}`}
+            >
+              Contact me
             </Button>
           </Grid>
         </Grid>
         <Grid item container xs={12} justifyContent={"center"}>
           <Tooltip title="GitHub">
-            <IconButton target="_blank" href="https://www.github.com/PR0C3S">
-              <GitHubIcon />
+            <IconButton
+              target="_blank"
+              href="https://www.github.com/PR0C3S"
+              size="large"
+            >
+              <GitHubIcon fontSize="inherit" />
             </IconButton>
           </Tooltip>
           <Tooltip title="Linkedin">
             <IconButton
               target="_blank"
               href="https://www.linkedin.com/in/johnhpena/"
+              size="large"
             >
-              <LinkedInIcon />
+              <LinkedInIcon fontSize="inherit" />
             </IconButton>
           </Tooltip>
         </Grid>
-      </Grid>
-      <Grid item xs={12}>
-        <MySkills />
-      </Grid>
-      <Grid item xs={12}>
-        <Slider />
       </Grid>
     </Grid>
   );
