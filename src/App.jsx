@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -6,12 +6,12 @@ import {
   Container,
   ThemeProvider,
   createTheme,
-  colors,
   CssBaseline,
 } from "@mui/material";
-import NavBar from "./ui/NavBar";
 import Experience from "./pages/Experience";
-import { useDarkMode } from "./theme/DarkModeContext";
+import { useDarkMode } from "./context/DarkModeContext";
+import Footer from "./pages/Footer";
+import Header from "./pages/Header";
 
 export default function App() {
   const { isDarkMode } = useDarkMode();
@@ -26,15 +26,14 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <header>
-        <NavBar />
-      </header>
+      <Header />
       <Container>
         <Home />
         <Experience />
         <Skills />
         <Projects />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }

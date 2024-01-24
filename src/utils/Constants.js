@@ -19,6 +19,8 @@ import docker from "../assets/docker.svg";
 import aws from "../assets/aws.svg";
 import jira from "../assets/jira.svg";
 import tailwind from "../assets/tailwindcss.svg";
+import ai from "../assets/ai.svg";
+import blindAssistanceVideo from "../assets/Blind Assistance Device.mp4";
 
 export const name = "John Peña";
 export const positions = ["System Engineer", "Full Stack Developer"];
@@ -132,6 +134,7 @@ export const skills = [
   },
 ];
 
+export const year = new Date().getFullYear();
 import pizza from "/Pizza screen.png";
 import tictactoe from "/TIC-TACT-TOE SCREEN.png";
 import todo from "/todo screen.png";
@@ -191,6 +194,16 @@ export const projects = [
     skills: [
       { name: "React", logo: react },
       { name: "Material UI", logo: materialui },
+    ],
+  },
+  {
+    img: blindAssistanceVideo,
+    isVideo: true,
+    title: "Blind Assistance Device",
+    github: "https://github.com/PR0C3S/Asistentes-Invidentes-Fork",
+    skills: [
+      { name: "Python", logo: python },
+      { name: "AI", logo: ai },
     ],
   },
 ];

@@ -55,14 +55,32 @@ export default function Slider() {
           return (
             <SwiperSlide key={item.title}>
               <Grid item>
-                <Card>
-                  <CardMedia
-                    image={item.img}
-                    title={item.title}
-                    sx={{ height: 250 }}
-                  />
+                <Card sx={{ height: 450 }}>
+                  {item?.isVideo === true ? (
+                    <CardMedia
+                      component="video"
+                      image={item.img}
+                      controls
+                      title={item.title}
+                      sx={{ height: 250 }}
+                    />
+                  ) : (
+                    <CardMedia
+                      image={item.img}
+                      title={item.title}
+                      sx={{ height: 250 }}
+                    />
+                  )}
+
                   <CardContent>
-                    <Grid item container>
+                    <Grid
+                      item
+                      container
+                      justifyContent={"center"}
+                      xs={12}
+                      spacing={1}
+                      mt={1}
+                    >
                       <Grid item xs={8}>
                         <Typography gutterBottom variant="h5" component="div">
                           {item.title}
@@ -74,11 +92,13 @@ export default function Slider() {
                             <GitHubIcon />
                           </IconButton>
                         </Tooltip>
-                        <Tooltip title="Live Demo">
-                          <IconButton target="_blank" href={item.demo}>
-                            <OpenInNewIcon />
-                          </IconButton>
-                        </Tooltip>
+                        {item?.demo && (
+                          <Tooltip title="Live Demo">
+                            <IconButton target="_blank" href={item.demo}>
+                              <OpenInNewIcon />
+                            </IconButton>
+                          </Tooltip>
+                        )}
                       </Grid>
                     </Grid>
                     <Grid

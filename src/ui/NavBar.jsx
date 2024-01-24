@@ -9,10 +9,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
-import { useDarkMode } from "../theme/DarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 import { Avatar, Link } from "@mui/material";
 
 const pages = ["Home", "Experience", "Skills", "Projects"];
