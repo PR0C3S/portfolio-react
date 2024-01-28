@@ -20,7 +20,6 @@ import aws from "../assets/aws.svg";
 import jira from "../assets/jira.svg";
 import tailwind from "../assets/tailwindcss.svg";
 import ai from "../assets/ai.svg";
-import blindAssistanceVideo from "../assets/Blind Assistance Device.mp4";
 
 export const name = "John Peña";
 export const positions = ["System Engineer", "Full Stack Developer"];
@@ -135,17 +134,11 @@ export const skills = [
 ];
 
 export const year = new Date().getFullYear();
-import pizza from "/Pizza screen.png";
-import tictactoe from "/TIC-TACT-TOE SCREEN.png";
-import todo from "/todo screen.png";
-import weather from "/weather screen.png";
-import reactquiz from "/react quiz screen.png";
-import datecalculator from "/date calculator screen.png";
 
 export const projects = [
   {
-    img: blindAssistanceVideo,
     isVideo: true,
+    img: "https://www.youtube.com/embed/taMdTk-fgZU",
     title: "Blind Assistance Device",
     github: "https://github.com/PR0C3S/Asistentes-Invidentes-Fork",
     skills: [
@@ -154,7 +147,8 @@ export const projects = [
     ],
   },
   {
-    img: reactquiz,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/ZOPsV8hz_rQ",
     title: "The React Quiz",
     github:
       "https://github.com/PR0C3S/React_Course_2023/tree/main/10-react-quiz",
@@ -165,7 +159,8 @@ export const projects = [
     ],
   },
   {
-    img: pizza,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/vhKe-sl1ZLA",
     title: "Fast React App",
     github:
       "https://github.com/PR0C3S/React_Course_2023/tree/main/16-fast-react-pizza",
@@ -176,7 +171,8 @@ export const projects = [
     ],
   },
   {
-    img: tictactoe,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/kR5vaUHg60o",
     title: "Tic Tac Toe",
     github: "https://github.com/PR0C3S/Tic-Tac-Toe-in-React-JS",
     demo: "https://tic-tac-toe-johnpena.netlify.app",
@@ -186,7 +182,8 @@ export const projects = [
     ],
   },
   {
-    img: todo,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/v9mVqbVIVT0",
     title: "Todo List ",
     github:
       "https://github.com/PR0C3S/React_Course_2023/tree/main/challenge-todo-list",
@@ -197,7 +194,8 @@ export const projects = [
     ],
   },
   {
-    img: weather,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/toYUHraM2M8",
     title: "Weather APP",
     github:
       "https://github.com/PR0C3S/React_Course_2023/tree/main/challenge-weather-app",
@@ -208,7 +206,8 @@ export const projects = [
     ],
   },
   {
-    img: datecalculator,
+    isVideo: true,
+    img: "https://www.youtube.com/embed/DZcMGeerW6k",
     title: "Date Calculator",
     github: "https://github.com/PR0C3S/date-calculator-react",
     demo: "https://datecalculator-johnpena.netlify.app",

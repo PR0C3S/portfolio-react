@@ -58,9 +58,8 @@ export default function Slider() {
                 <Card sx={{ height: 450 }}>
                   {item?.isVideo === true ? (
                     <CardMedia
-                      component="video"
-                      image={item.img}
-                      controls
+                      component="iframe"
+                      src={item.img}
                       title={item.title}
                       sx={{ height: 250 }}
                     />
