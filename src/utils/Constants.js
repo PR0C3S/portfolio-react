@@ -140,8 +140,30 @@ import tictactoe from "/TIC-TACT-TOE SCREEN.png";
 import todo from "/todo screen.png";
 import weather from "/weather screen.png";
 import reactquiz from "/react quiz screen.png";
+import datecalculator from "/date calculator screen.png";
 
 export const projects = [
+  {
+    img: blindAssistanceVideo,
+    isVideo: true,
+    title: "Blind Assistance Device",
+    github: "https://github.com/PR0C3S/Asistentes-Invidentes-Fork",
+    skills: [
+      { name: "Python", logo: python },
+      { name: "AI", logo: ai },
+    ],
+  },
+  {
+    img: reactquiz,
+    title: "The React Quiz",
+    github:
+      "https://github.com/PR0C3S/React_Course_2023/tree/main/10-react-quiz",
+    demo: "https://thereactquiz-johnpena.netlify.app",
+    skills: [
+      { name: "React", logo: react },
+      { name: "Material UI", logo: materialui },
+    ],
+  },
   {
     img: pizza,
     title: "Fast React App",
@@ -186,24 +208,13 @@ export const projects = [
     ],
   },
   {
-    img: reactquiz,
-    title: "The React Quiz",
-    github:
-      "https://github.com/PR0C3S/React_Course_2023/tree/main/10-react-quiz",
-    demo: "https://thereactquiz-johnpena.netlify.app",
+    img: datecalculator,
+    title: "Date Calculator",
+    github: "https://github.com/PR0C3S/date-calculator-react",
+    demo: "https://datecalculator-johnpena.netlify.app",
     skills: [
       { name: "React", logo: react },
-      { name: "Material UI", logo: materialui },
-    ],
-  },
-  {
-    img: blindAssistanceVideo,
-    isVideo: true,
-    title: "Blind Assistance Device",
-    github: "https://github.com/PR0C3S/Asistentes-Invidentes-Fork",
-    skills: [
-      { name: "Python", logo: python },
-      { name: "AI", logo: ai },
+      { name: "Material ui", logo: materialui },
     ],
   },
 ];
