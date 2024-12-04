@@ -6,7 +6,7 @@ import ProjectData from "../feactures/ProjectData";
 const projectList = [
   {
     title: "Restaurant App",
-    date: "November 2024 - Currently",
+    date: "In Progress",
     description:
       "An all-in-one application designed to optimize restaurant management. It allows the issuance of fiscal invoices, control and tracking of product inventory, efficient table management, monitoring of products sold both via delivery and locally, and provides a real-time view of food preparation. Additionally, it includes control over operational expenses. This application streamlines the daily operations of the restaurant, improving efficiency and accuracy in all areas, from customer service to internal management.",
     skills: ["MONGO", "EXPRESS", "REACT", "NODE"],
