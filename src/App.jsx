@@ -118,7 +118,7 @@ export default function App() {
           </Grid>
           <Grid item xs={12} mb={5}>
             <Typography textAlign={"center"}>
-              {`Designed by John Peña.`}
+              {`Designed by John Pena.`}
             </Typography>
           </Grid>
         </Grid>
