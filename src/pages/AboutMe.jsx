@@ -24,8 +24,7 @@ const data = {
     "Bilingual (English & Spanish)",
   ],
 
-  description: `Experienced software engineer with a solid foundation in software development, specializing in building high-performance web applications using Java, Node and React. With 2 years of hands-on experience, I excel in problem-solving, enhancing usability, and driving efficiency improvements.
-I thrive both independently and as part of cross-functional teams in Agile environments.`,
+  description: `Graduated in Software Engineering with a specialization in software development using Java,Node, React, and Spring Boot, and 3 years of experience in the field. My primary focus is on problem-solving, optimizing usability, and maximizing efficiency. I have extensive experience in Java-based backend development, particularly with the Spring Boot framework, and in building robust web applications. I am proficient in using Java and Spring Boot to design scalable, high-performance solutions, alongside creating dynamic front-end applications with React. My background includes working both independently and collaboratively in Agile environments using Scrum methodologies. I am a clear communicator, proactive, and fluent in both English and Spanish.`,
 };
 export default function AboutMe() {
   const { name, email, position, description } = data;
